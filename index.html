@@ -39,24 +39,24 @@
 
 
 var app = angular.module("eCommerce",['ngRoute']);
-app.controller("HeaderController",function($scope)
-{
+app.controller("HeaderController",function($scope){
 
-$scope.current_user = {
-
-name: 'raefik'
-
-};
+  $scope.current_user = {
+    name: 'jimanx2'
+  };
 
 });
 
 
 app.config(function($routeProvider){
 
-$routeProvider.when('/',{ templateUrl: 'home.html'}).when('/products',{templateUrl:'/products.html'}).otherwise('/');
+  $routeProvider.when('/',{ 
+    templateUrl: 'home.html'
+  }).when('/products', {
+    templateUrl:'/products.html'
+  }).otherwise('/');
 
-}
-);
+});
 
 
 </script>
